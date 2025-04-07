@@ -7,7 +7,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:70/nextapi/products.php')
+    axios.get('https://ascinate.in/demo/nextapi/products.php')
       .then(res => setProducts(res.data))
       .catch(err => console.error('Error fetching products:', err));
   }, []);

@@ -12,7 +12,7 @@ export default function ProductDetail() {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:70/nextapi/product-details.php?id=${id}`)
+        .get(`https://ascinate.in/demo/nextapi/product-details.php?id=${id}`)
         .then(res => setProduct(res.data));
     }
   }, [id]);

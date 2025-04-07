@@ -18,7 +18,7 @@ export default function Login() {
 
     try {
       const res = await axios.post(
-        'http://localhost:70/nextapi/login.php',
+        'https://ascinate.in/demo/nextapi/login.php',
         { email, password },
         {
           headers: {
